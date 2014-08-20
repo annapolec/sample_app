@@ -1,0 +1,18 @@
+																<!header zawiera elem, ktore pojawia 
+																 na gorze strony!>
+	<header class="navbar navbar-fixed-top navbar-inverse">		<!wszystkie klasy to klasy CSS, navbar -															 navigation bar
+																  navbar - zeby miec pasek nawigacji w ogole, navbar-fixed-top - bedzie zawsze na gorze, navbar-inverse - #bialy tekst na czarnym tle!>
+		<div class="navbar-inner">								
+			<div class="container">
+				<%= link_to "sample app", root_path, id: "logo" %>	<!helper link_to, parametry: tekst link												 	adres strony, opcjonalny hash CSS id!>
+				<nav>											
+																<!embedded Ruby zamiast zwyklego html, 	 why?!>
+					<ul class="nav pull-right">					
+						<li><%= link_to "Home",		root_path %></li>	
+						<li><%= link_to "Help", 	help_path %></li>
+						<li><%= link_to "Sign in",	'#' %></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</header>
